@@ -28,7 +28,7 @@ Step2: Go to PushlisherAPI\bin\Release\netcoreapp3.1 and Edit configurations in 
   
   Step4: In /rabbitmq/test-multi-concurrrent path. Enter parameters and click Execute.
   
-  Step5: If you have no any error, respone is "Completed!". You can check in Rabbimq Management, a queue named "test" creatd with messages. You can see like this: https://prnt.sc/tg7jw7
+  Step5: If you have no any error, response is "Completed!". You can check in Rabbimq Management, a queue named "test" created with messages. You can see like this: https://prnt.sc/tg7jw7
 
 
 
