@@ -2,7 +2,7 @@
 
 An API for testing Rabbitmq
 
-## Installation
+## how to test
 
 Step1: Clone repository
 
