@@ -49,6 +49,20 @@ namespace PushlisherAPI.Controllers
         {
             try
             {
+
+                try
+                {
+                    //Check rabbitmq connection
+                    var cf = _config.Value;
+                    var factory = new ConnectionFactory() { HostName = cf.Hostname, Port = cf.Port, UserName = cf.UserName, Password = cf.Password };
+                    var connection = factory.CreateConnection();
+                }
+                catch (Exception)
+                {
+                    return Ok("Init Rabbit Connection failed! Please re-check configurations");
+                }                
+
+                //Start threads
                 List<Task> taskList = new List<Task>();
                 for (int i = 0; i < n; i++)
                 {
@@ -65,7 +79,7 @@ namespace PushlisherAPI.Controllers
             catch (Exception ex)
             {
 
-                return StatusCode(500);
+                return Ok(ex.Message);
             }
 
         }
@@ -82,11 +96,11 @@ namespace PushlisherAPI.Controllers
                 var cf = _config.Value;                
 
                 //Init rabbit connection
-                var factory = new ConnectionFactory() { HostName = cf.Hostname, UserName = cf.UserName, Password = cf.Password};
+                var factory = new ConnectionFactory() { HostName = cf.Hostname, Port = cf.Port, UserName = cf.UserName, Password = cf.Password};
 
                 using (var connection = factory.CreateConnection())
                 using (var channel = connection.CreateModel())
-                {
+                {                    
                     channel.QueueDeclare(queue: cf.QueueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
                     //Start sending data
@@ -106,8 +120,7 @@ namespace PushlisherAPI.Controllers
             }
             catch (Exception ex)
             {
-
-                throw;
+                throw new Exception(ex.Message);
             }
 
         }
