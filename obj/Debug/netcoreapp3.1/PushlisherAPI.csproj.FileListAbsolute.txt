@@ -20,5 +20,10 @@ C:\Users\phamvandung\source\repos\PushlisherAPI\bin\Debug\netcoreapp3.1\RabbitMQ
 C:\Users\phamvandung\source\repos\PushlisherAPI\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 C:\Users\phamvandung\source\repos\PushlisherAPI\obj\Debug\netcoreapp3.1\PushlisherAPI.csproj.CopyComplete
 C:\Users\phamvandung\source\repos\PushlisherAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\phamvandung\source\repos\PushlisherAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\phamvandung\source\repos\PushlisherAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\phamvandung\source\repos\PushlisherAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\phamvandung\source\repos\PushlisherAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\phamvandung\source\repos\PushlisherAPI\obj\Debug\netcoreapp3.1\PushlisherAPI.csproj.CoreCompileInputs.cache
+C:\Users\phamvandung\source\repos\PushlisherAPI\obj\Debug\netcoreapp3.1\PushlisherAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\phamvandung\source\repos\PushlisherAPI\obj\Debug\netcoreapp3.1\PushlisherAPI.MvcApplicationPartsAssemblyInfo.cache

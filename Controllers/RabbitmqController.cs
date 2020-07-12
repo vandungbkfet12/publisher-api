@@ -73,6 +73,7 @@ namespace PushlisherAPI.Controllers
         /// Start connect Rabbitmq and send data
         /// </summary>
         /// <param name="i"></param>
+        [NonAction]
         public async void CreateThread(int i, int delay, int total)
         {
             try

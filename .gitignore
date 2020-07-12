@@ -1,0 +1,11 @@
+﻿/.vs
+/PublisherAPI/*.user
+/PublisherAPI/bin
+/PublisherAPI/obj
+/PublisherAPI/Properties
+/PublisherAPI/publish
+*.idea
+/PublisherAPI/Logs
+.DS_Store
+*.user
+/.vscode
